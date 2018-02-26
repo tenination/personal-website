@@ -108,10 +108,10 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>Home</Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a' active>About Me</Menu.Item>
+                <Menu.Item as='a'>Skills</Menu.Item>
+                <Menu.Item as='a'>Portfolio</Menu.Item>
+                <Menu.Item as='a'>Blog</Menu.Item>
                 <Menu.Item position='right'>
                 </Menu.Item>
               </Container>
@@ -192,6 +192,11 @@ ResponsiveContainer.propTypes = {
 
 const Homepage = () => (
   <ResponsiveContainer>
+    <Segment style={{ padding: '0em 0em' }}>
+    <h1 style={{height: '100px', textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-20px', background:'black'}}>About Me</h1>
+     <p style={{padding:'20px 10px', fontSize:'20px'}}>I started programming about 10 years ago when I took Java courses in highschool. I have always had a passion for programming and after a 3+ year career in telecom engineering, I rediscovered this passion. Since then I have been on a quest to code all the time and continually build my skills. I am fortunate to know my purpose in life - building awesome web and mobile based experiences.  </p>
+    </Segment>
+
     <Segment inverted style={{ padding: '8em 0em' }}>
     <h1 style={{textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-70px'}}>Skills</h1>
       <Grid style={{marginTop:'30px'}}>  
@@ -305,6 +310,11 @@ const Homepage = () => (
 
         </Grid.Row>
       </Grid>
+    </Segment>
+
+    <Segment style={{ padding: '0em 0em' }}>
+    <h1 style={{height: '100px', textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-20px', background:'black'}}>Blog</h1>
+     <p style={{padding:'20px 10px', fontSize:'20px', textAlign:'center'}}>Coming Soon!</p>
     </Segment>
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
