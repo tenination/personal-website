@@ -17,12 +17,21 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
+import reactLogo from './reactLogo.png';
+import reduxLogo from './reduxLogo.png';
+import angularLogo from './angularLogo.png';
+import backboneLogo from './backboneLogo.png';
+import jqueryLogo from './jqueryLogo.png';
+import htmlLogo from './htmlLogo.png';
+import cssLogo from './cssLogo.png';
+import purple from './purple.jpg';
+
 
 const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='Tim Ninan'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -33,7 +42,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content="I'm an Austin based full-stack software engineer focused on crafting clean & user‑friendly experiences."
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -41,10 +50,6 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
-      Get Started
-      <Icon name='right arrow' />
-    </Button>
   </Container>
 )
 
@@ -69,7 +74,7 @@ class DesktopContainer extends Component {
     return (
       <Responsive {...Responsive.onlyComputer}>
         <Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
-          <Segment inverted textAlign='center' style={{ minHeight: 700, padding: '1em 0em' }} vertical>
+          <Segment inverted textAlign='center' style={{ minHeight: 700, padding: '1em 0em', backgroundImage:`url(${purple})`, backgroundSize:'cover'  }} vertical>
             <Menu
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
@@ -83,8 +88,6 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a'>Company</Menu.Item>
                 <Menu.Item as='a'>Careers</Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>Log in</Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>Sign Up</Button>
                 </Menu.Item>
               </Container>
             </Menu>
@@ -164,34 +167,44 @@ ResponsiveContainer.propTypes = {
 
 const Homepage = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Grid container stackable verticalAlign='middle'>
+    <Segment inverted style={{ padding: '8em 0em' }}>
+    <h1 style={{textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-70px'}}>Skills</h1>
+      <Grid style={{marginTop:'30px'}}>  
+      <Grid.Row columns={3}>
+        <Grid.Column style={{background: 'white'}}>
+        <h1 style={{textAlign: 'center', color: 'black'}}>Front End</h1>
         <Grid.Row>
-          <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>We Help Companies and Companions</Header>
-            <p style={{ fontSize: '1.33em' }}>
-              We can give your company superpowers to do things that they never thought possible. Let us delight
-              your customers and empower your needs... through pure data analytics.
-            </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>We Make Bananas That Can Dance</Header>
-            <p style={{ fontSize: '1.33em' }}>
-              Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
-            </p>
-          </Grid.Column>
-          <Grid.Column floated='right' width={6}>
-            <Image
-              bordered
-              rounded
-              size='large'
-              src='/assets/images/wireframe/white-image.png'
-            />
-          </Grid.Column>
+          <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={reduxLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px', background:'white'}}></img>
+          <img src={backboneLogo} style={{height:'130px', width:'100px', padding: '15px'}}></img>
+          <img src={jqueryLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={htmlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={cssLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
         </Grid.Row>
+        </Grid.Column>
+
+        <Grid.Column>
+        <h1 style={{textAlign: 'center'}}>Back End</h1>
         <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
-          </Grid.Column>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
         </Grid.Row>
+        </Grid.Column>
+        <Grid.Column>
+        <h1 style={{textAlign: 'center'}}>Other</h1>
+        <Grid.Row>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+        </Grid.Row>
+        </Grid.Column>
+      </Grid.Row>
       </Grid>
     </Segment>
     <Segment style={{ padding: '0em' }} vertical>
