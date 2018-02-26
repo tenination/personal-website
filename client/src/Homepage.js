@@ -43,8 +43,10 @@ import pythonLogo from './pythonLogo.png';
 import cplusplusLogo from './cplusplusLogo.png';
 import javaLogo from './javaLogo.png';
 
-
-
+import MySong from './MySong.png';
+import PantryByte from './PantryByte.png';
+import AsteroidTracker from './AsteroidTracker.png';
+import MyGoalPosts from './MyGoalPosts.png';
 
 import purple from './purple.jpg';
 
@@ -234,23 +236,73 @@ const Homepage = () => (
       </Grid.Row>
       </Grid>
     </Segment>
+
     <Segment style={{ padding: '0em' }} vertical>
+      <h1 style={{textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-92px'}}>Portfolio</h1>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
+          
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>"What a Company"</Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
+            <Header as='h2' style={{ fontSize: '2em' }}>MySong</Header>
+            <p style={{fontStyle:'italic', fontSize:'30px'}}>A Spotify integrated platform to share your favorite song for the week with people in your life</p>
+            <img src={MySong} style={{width:'488px', height:'226px'}}></img>
+            <br/>
+            <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
+            <img src={mongodbLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <br/>
+            <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
+            <br/>
+            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
+
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>"I shouldn't have gone with their competitor."</Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/assets/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+            <Header as='h3' style={{ fontSize: '2em' }}>PantryByte</Header>
+            <p style={{fontStyle:'italic', fontSize:'30px'}}>An app to help you find recipes based on ingredients in your kitchen</p>
+            <img src={PantryByte} style={{width:'488px', height:'226px'}}></img>
+            <br/>
+            <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
+            <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <br/>
+            <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
+            <br/>
+            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
+
+        </Grid.Row>
+          <Grid.Row textAlign='center'>
+          
+          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+            <Header as='h3' style={{ fontSize: '2em' }}>Asteroid Tracker</Header>
+             <p style={{fontStyle:'italic', fontSize:'30px'}}>Stay one step ahead of the asteroids closest to earth</p>
+            <img src={AsteroidTracker} style={{width:'488px', height:'226px'}}></img>
+            <br/>
+            <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
+            <br/>
+            <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
+            <br/>
+            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
+          </Grid.Column>
+
+          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+            <Header as='h3' style={{ fontSize: '2em' }}>My Goal Posts</Header>
+             <p style={{fontStyle:'italic', fontSize:'30px'}}>Keep track of your goals online</p>
+            <img src={MyGoalPosts} style={{width:'488px', height:'226px'}}></img>
+            <br/>
+            <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
+            <br/>
+            <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
+            <br/>
+            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
+          </Grid.Column>
+
         </Grid.Row>
       </Grid>
     </Segment>
+
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>Breaking The Grid, Grabs Your Attention</Header>
