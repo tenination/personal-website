@@ -17,6 +17,7 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
+// frontend
 import reactLogo from './reactLogo.png';
 import reduxLogo from './reduxLogo.png';
 import angularLogo from './angularLogo.png';
@@ -24,6 +25,27 @@ import backboneLogo from './backboneLogo.png';
 import jqueryLogo from './jqueryLogo.png';
 import htmlLogo from './htmlLogo.png';
 import cssLogo from './cssLogo.png';
+import javascriptLogo from './javascriptLogo.png';
+// backend
+import nodeLogo from './nodeLogo.png';
+import mongodbLogo from './mongodbLogo.png';
+import mysqlLogo from './mysqlLogo.svg';
+import expressjsLogo from './expressjsLogo.svg';
+import graphQLLogo from './graphQLLogo.png';
+
+// other
+import awsLogo from './awsLogo.png';
+import herokuLogo from './herokuLogo.svg';
+import gitLogo from './gitLogo.png';
+import npmLogo from './npmLogo.png';
+import mochaLogo from './mochaLogo.svg';
+import pythonLogo from './pythonLogo.png';
+import cplusplusLogo from './cplusplusLogo.png';
+import javaLogo from './javaLogo.png';
+
+
+
+
 import purple from './purple.jpg';
 
 
@@ -181,27 +203,32 @@ const Homepage = () => (
           <img src={jqueryLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
           <img src={htmlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
           <img src={cssLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={javascriptLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
         </Grid.Row>
         </Grid.Column>
 
-        <Grid.Column>
-        <h1 style={{textAlign: 'center'}}>Back End</h1>
+        <Grid.Column style={{background: 'white'}}>
+        <h1 style={{textAlign: 'center', color: 'black'}}>Back End</h1>
         <Grid.Row>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={nodeLogo} style={{height:'70px', width:'100px', padding: '15px'}}></img>
+          <img src={mongodbLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={expressjsLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={graphQLLogo} style={{height:'80px', width:'170px', padding: '15px'}}></img>
         </Grid.Row>
         </Grid.Column>
-        <Grid.Column>
-        <h1 style={{textAlign: 'center'}}>Other</h1>
+
+        <Grid.Column style={{background: 'white'}}>
+        <h1 style={{textAlign: 'center', color: 'black'}}>Other</h1>
         <Grid.Row>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
-          <img src={reactLogo} style={{height:'100px', width:'100px'}}></img>
+          <img src={awsLogo} style={{height:'70px', width:'100px', padding: '15px'}}></img>
+          <img src={herokuLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={gitLogo} style={{height:'60px', width:'100px', padding: '15px'}}></img>
+          <img src={npmLogo} style={{height:'60px', width:'100px', padding: '15px'}}></img>
+          <img src={mochaLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={pythonLogo} style={{height:'50px', width:'100px', padding: '15px'}}></img>
+          <img src={javaLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+          <img src={cplusplusLogo} style={{height:'100px', width:'90px', padding: '15px'}}></img>
         </Grid.Row>
         </Grid.Column>
       </Grid.Row>
