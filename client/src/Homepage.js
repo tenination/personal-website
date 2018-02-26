@@ -32,6 +32,7 @@ import mongodbLogo from './mongodbLogo.png';
 import mysqlLogo from './mysqlLogo.svg';
 import expressjsLogo from './expressjsLogo.svg';
 import graphQLLogo from './graphQLLogo.png';
+import sqliteLogo from './sqliteLogo.png';
 
 // other
 import awsLogo from './awsLogo.png';
@@ -265,9 +266,9 @@ const Homepage = () => (
             <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
             <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             <br/>
-            <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
+            <a href='http://bytehr.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
             <br/>
-            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
+            <a href='https://github.com/3bit-Inc/byte' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
 
         </Grid.Row>
@@ -281,9 +282,9 @@ const Homepage = () => (
             <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
             <br/>
-            <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
+            <a href='https://asteroidtracker.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
             <br/>
-            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
+            <a href='https://github.com/tenination/asteroid-tracker' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
 
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -293,10 +294,11 @@ const Homepage = () => (
             <br/>
             <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
+            <img src={sqliteLogo} style={{height:'100px', width:'170px', padding: '15px'}}></img>
             <br/>
-            <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
+            <a href='http://mygoalposts.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
             <br/>
-            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
+            <a href='https://github.com/tenination/my-goals' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
 
         </Grid.Row>
