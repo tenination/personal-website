@@ -17,6 +17,8 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
+//background
+import keyboard from './keyboard.jpg'
 // frontend
 import reactLogo from './reactLogo.png';
 import reduxLogo from './reduxLogo.png';
@@ -99,7 +101,7 @@ class DesktopContainer extends Component {
     return (
       <Responsive {...Responsive.onlyComputer}>
         <Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
-          <Segment inverted textAlign='center' style={{ minHeight: 700, padding: '1em 0em', backgroundImage:`url(${purple})`, backgroundSize:'cover'  }} vertical>
+          <Segment inverted textAlign='center' style={{ minHeight: 700, padding: '1em 0em', backgroundImage:`url(${keyboard})`, backgroundSize:'cover'  }} vertical>
             <Menu
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
