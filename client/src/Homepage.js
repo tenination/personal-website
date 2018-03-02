@@ -15,7 +15,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css';
+
 //background
 import keyboard from './keyboard.jpg'
 import bluepaper from './blue-wallpaper.jpg'
@@ -53,10 +53,10 @@ import MyGoalPosts from './MyGoalPosts.png';
 
 import purple from './purple.jpg';
 
-
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container  text>
     <Header
+      class='element2'
       as='h1'
       content='Tim Ninan'
       inverted
@@ -65,6 +65,7 @@ const HomepageHeading = ({ mobile }) => (
         fontWeight: 'normal',
         marginBottom: 0,
         marginTop: mobile ? '1.5em' : '3em',
+        fontFamily: 'Bungee'
       }}
     />
     <Header
@@ -102,7 +103,7 @@ class TabletContainer extends Component {
   render() {
     const { children } = this.props
     return (
-      <Responsive {...Responsive.onlyMobile}>
+      <Responsive  {...Responsive.onlyMobile}>
             <Segment inverted textAlign='center' style={{ minHeight: 350, padding: '1em 0em', backgroundImage:`url(${bluepaper})`, backgroundSize:'cover'  }} vertical>
               <HomepageHeading mobile />
             </Segment>
@@ -117,7 +118,7 @@ class MobileContainer extends Component {
   render() {
     const { children } = this.props
     return (
-      <Responsive {...Responsive.onlyTablet}>
+      <Responsive  {...Responsive.onlyTablet}>
             <Segment inverted textAlign='center' style={{ minHeight: 350, padding: '1em 0em', backgroundImage:`url(${bluepaper})`, backgroundSize:'cover'  }} vertical>
               <HomepageHeading mobile />
             </Segment>
@@ -130,8 +131,8 @@ class MobileContainer extends Component {
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
-    <TabletContainer>{children}</TabletContainer>
-    <MobileContainer>{children}</MobileContainer>
+    <TabletContainer >{children}</TabletContainer>
+    <MobileContainer >{children}</MobileContainer>
   </div>
 )
 
@@ -139,6 +140,7 @@ const Homepage = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '0em 0em' }}>
     <Segment
+     className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>About Me
     </Segment>
      <p style={{padding:'100px 80px', fontSize:'20px'}}>I started programming about 10 years ago when I took Java courses in highschool. I have always had a passion for programming and after a 3+ year career in telecom engineering, I rediscovered this passion. Since then I have been on a quest to code all the time and continually build my skills. I am fortunate to know my purpose in life - building awesome web and mobile based experiences.  </p>
@@ -146,12 +148,13 @@ const Homepage = () => (
 
     <Segment style={{ padding: '8em 0em' }}>
     <Segment
+     className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-115px'}}>Skills
     </Segment>
-      <Grid style={{marginTop:'30px', padding:'50px'}}>  
+      <Grid style={{marginTop:'30px', padding:'10px'}}>  
       <Grid.Row columns={3}>
         <Grid.Column style={{background: 'white'}}>
-        <h1 style={{textAlign: 'center', color: 'black'}}>Front End</h1>
+        <h1 className='skills-subheading'>Front-End</h1>
         <Grid.Row>
           <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
           <img src={reduxLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
@@ -165,18 +168,18 @@ const Homepage = () => (
         </Grid.Column>
 
         <Grid.Column style={{background: 'white'}}>
-        <h1 style={{textAlign: 'center', color: 'black'}}>Back End</h1>
+        <h1 className='skills-subheading'>Back-End</h1>
         <Grid.Row>
           <img src={nodeLogo} style={{height:'70px', width:'100px', padding: '15px'}}></img>
           <img src={mongodbLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
           <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
           <img src={expressjsLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
-          <img src={graphQLLogo} style={{height:'80px', width:'170px', padding: '15px'}}></img>
+          <img src={graphQLLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
         </Grid.Row>
         </Grid.Column>
 
         <Grid.Column style={{background: 'white'}}>
-        <h1 style={{textAlign: 'center', color: 'black'}}>Other</h1>
+        <h1 className='skills-subheading'>General</h1>
         <Grid.Row>
           <img src={awsLogo} style={{height:'70px', width:'100px', padding: '15px'}}></img>
           <img src={herokuLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
@@ -193,18 +196,20 @@ const Homepage = () => (
     </Segment>
 
     <Segment style={{ padding: '0em', paddingBottom: '50px' }} vertical>
-      <Segment style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>Portfolio</Segment>
+      <Segment className='website-heading' style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>Portfolio</Segment>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h2' style={{ fontSize: '2em' }}>MySong</Header>
+            <Header as='h2' style={{ fontSize: '2em', fontFamily:'Titillium Web' }}>MySong</Header>
             <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>A Spotify integrated platform to share your favorite song for the week with people in your life</p>
             <img src={MySong} style={{width:'488px', height:'226px', borderRadius:'10px'}}></img>
             <br/>
-            <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
-            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
-            <img src={mongodbLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <div style={{paddingTop:'20px'}}>
+              <img src={reactLogo} style={{width:'80px', padding: '15px'}}></img>
+              <img src={nodeLogo} style={{width:'100px', padding: '15px'}}></img>
+              <img src={mongodbLogo} style={{width:'80px', padding: '15px'}}></img>
+            </div>
             <br/>
             <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
             <br/>
@@ -212,13 +217,15 @@ const Homepage = () => (
           </Grid.Column>
 
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>PantryByte</Header>
+            <Header as='h3' style={{ fontSize: '2em', fontFamily:'Titillium Web' }}>Byte</Header>
             <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>An app to help you find recipes based on ingredients in your kitchen</p>
             <img src={PantryByte} style={{width:'488px', height:'226px', borderRadius:'10px'}}></img>
             <br/>
-            <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
-            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
-            <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            <div style={{paddingTop:'20px'}}>
+              <img src={reactLogo} style={{width:'80px', padding: '15px'}}></img>
+              <img src={nodeLogo} style={{width:'100px', padding: '15px'}}></img>
+              <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
+            </div>
             <br/>
             <a href='https://github.com/3bit-Inc/byte' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
@@ -227,12 +234,14 @@ const Homepage = () => (
           <Grid.Row textAlign='center'>
           
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em', padding:'10px' }}>Asteroid Tracker</Header>
+            <Header as='h3' style={{ fontSize: '2em', padding:'10px', fontFamily:'Titillium Web' }}>Asteroid Tracker</Header>
              <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>Stay one step ahead of the asteroids closest to earth</p>
             <img src={AsteroidTracker} style={{width:'488px', height:'226px', borderRadius:'10px'}}></img>
             <br/>
-            <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
-            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
+            <div style={{paddingTop:'20px'}}>
+              <img src={angularLogo} style={{width:'80px', padding: '15px'}}></img>
+              <img src={nodeLogo} style={{width:'100px', padding: '15px'}}></img>
+            </div>
             <br/>
             <a href='https://asteroidtracker.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
             <br/>
@@ -245,6 +254,7 @@ const Homepage = () => (
 
     <Segment style={{ padding: '0em 0em' }}>
     <Segment
+     className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px'}}>Blog
     </Segment>
     
@@ -253,9 +263,9 @@ const Homepage = () => (
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
-          <h1 style={{textAlign:'center', fontSize:'20px'}}>&copy; 2018 Tim Ninan</h1>
+          <h1 style={{textAlign:'center', fontSize:'20px', fontFamily:'Bungee'}}>&copy; 2018 Tim Ninan</h1>
           <div style={{textAlign:'center'}}>
-          <span style={{fontSize:'15px', marginLeft:'25px'}}>Created using React.js and lots of</span>
+          <span style={{fontSize:'15px', marginLeft:'25px', fontFamily:'Titillium Web'}}>Created using React.js and lots of</span>
           <span style={{color:'black'}}> ...</span>
           <Icon name='heart' size='large' color='red' />
           </div>
