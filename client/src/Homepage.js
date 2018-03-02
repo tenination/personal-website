@@ -109,14 +109,6 @@ class DesktopContainer extends Component {
               secondary={!fixed}
               size='large'
             >
-              <Container>
-                <Menu.Item as='a' active>About Me</Menu.Item>
-                <Menu.Item as='a'>Skills</Menu.Item>
-                <Menu.Item as='a'>Portfolio</Menu.Item>
-                <Menu.Item as='a'>Blog</Menu.Item>
-                <Menu.Item position='right'>
-                </Menu.Item>
-              </Container>
             </Menu>
             <HomepageHeading />
           </Segment>
