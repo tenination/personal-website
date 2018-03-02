@@ -18,6 +18,7 @@ import {
 import 'semantic-ui-css/semantic.min.css';
 //background
 import keyboard from './keyboard.jpg'
+import bluepaper from './blue-wallpaper.jpg'
 // frontend
 import reactLogo from './reactLogo.png';
 import reduxLogo  from './reduxLogo.png';
@@ -74,7 +75,9 @@ const HomepageHeading = ({ mobile }) => (
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
         marginTop: mobile ? '0.5em' : '1.5em',
-        background: 'rgba(0, 0, 0, 0.3)'
+        // background: 'rgba(0, 0, 0, 0.3)',
+        // borderRadius:'20px',
+        padding:'20px'
       }}
     />
   </Container>
@@ -86,7 +89,7 @@ class DesktopContainer extends Component {
     const { children } = this.props
     return (
       <Responsive {...Responsive.onlyComputer}>
-          <Segment inverted textAlign='center' style={{ minHeight: 700, padding: '1em 0em', backgroundImage:`url(${keyboard})`, backgroundSize:'cover'  }} vertical>
+          <Segment inverted textAlign='center' style={{ minHeight: 700,  backgroundImage:`url(${bluepaper})` }} vertical>
             <HomepageHeading />
           </Segment>
         {children}
@@ -100,7 +103,7 @@ class TabletContainer extends Component {
     const { children } = this.props
     return (
       <Responsive {...Responsive.onlyMobile}>
-            <Segment inverted textAlign='center' style={{ minHeight: 350, padding: '1em 0em', backgroundImage:`url(${keyboard})`, backgroundSize:'cover'  }} vertical>
+            <Segment inverted textAlign='center' style={{ minHeight: 350, padding: '1em 0em', backgroundImage:`url(${bluepaper})`, backgroundSize:'cover'  }} vertical>
               <HomepageHeading mobile />
             </Segment>
             {children}
@@ -115,7 +118,7 @@ class MobileContainer extends Component {
     const { children } = this.props
     return (
       <Responsive {...Responsive.onlyTablet}>
-            <Segment inverted textAlign='center' style={{ minHeight: 350, padding: '1em 0em', backgroundImage:`url(${keyboard})`, backgroundSize:'cover'  }} vertical>
+            <Segment inverted textAlign='center' style={{ minHeight: 350, padding: '1em 0em', backgroundImage:`url(${bluepaper})`, backgroundSize:'cover'  }} vertical>
               <HomepageHeading mobile />
             </Segment>
             {children}
@@ -135,13 +138,17 @@ const ResponsiveContainer = ({ children }) => (
 const Homepage = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '0em 0em' }}>
-    <h1 style={{height: '100px', textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-20px', background:'black'}}>About Me</h1>
-     <p style={{padding:'20px 10px', fontSize:'20px'}}>I started programming about 10 years ago when I took Java courses in highschool. I have always had a passion for programming and after a 3+ year career in telecom engineering, I rediscovered this passion. Since then I have been on a quest to code all the time and continually build my skills. I am fortunate to know my purpose in life - building awesome web and mobile based experiences.  </p>
+    <Segment
+     style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>About Me
+    </Segment>
+     <p style={{padding:'100px 80px', fontSize:'20px'}}>I started programming about 10 years ago when I took Java courses in highschool. I have always had a passion for programming and after a 3+ year career in telecom engineering, I rediscovered this passion. Since then I have been on a quest to code all the time and continually build my skills. I am fortunate to know my purpose in life - building awesome web and mobile based experiences.  </p>
     </Segment>
 
-    <Segment inverted style={{ padding: '8em 0em' }}>
-    <h1 style={{textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-70px'}}>Skills</h1>
-      <Grid style={{marginTop:'30px'}}>  
+    <Segment style={{ padding: '8em 0em' }}>
+    <Segment
+     style={{textAlign: 'center', fontSize:'50px', marginTop:'-115px'}}>Skills
+    </Segment>
+      <Grid style={{marginTop:'30px', padding:'50px'}}>  
       <Grid.Row columns={3}>
         <Grid.Column style={{background: 'white'}}>
         <h1 style={{textAlign: 'center', color: 'black'}}>Front End</h1>
@@ -185,15 +192,15 @@ const Homepage = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '0em' }} vertical>
-      <h1 style={{textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-92px'}}>Portfolio</h1>
+    <Segment style={{ padding: '0em', paddingBottom: '50px' }} vertical>
+      <Segment style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>Portfolio</Segment>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h2' style={{ fontSize: '2em' }}>MySong</Header>
-            <p style={{fontStyle:'italic', fontSize:'30px'}}>A Spotify integrated platform to share your favorite song for the week with people in your life</p>
-            <img src={MySong} style={{width:'488px', height:'226px'}}></img>
+            <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>A Spotify integrated platform to share your favorite song for the week with people in your life</p>
+            <img src={MySong} style={{width:'488px', height:'226px', borderRadius:'10px'}}></img>
             <br/>
             <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
@@ -206,8 +213,8 @@ const Homepage = () => (
 
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>PantryByte</Header>
-            <p style={{fontStyle:'italic', fontSize:'30px'}}>An app to help you find recipes based on ingredients in your kitchen</p>
-            <img src={PantryByte} style={{width:'488px', height:'226px'}}></img>
+            <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>An app to help you find recipes based on ingredients in your kitchen</p>
+            <img src={PantryByte} style={{width:'488px', height:'226px', borderRadius:'10px'}}></img>
             <br/>
             <img src={reactLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
@@ -220,9 +227,9 @@ const Homepage = () => (
           <Grid.Row textAlign='center'>
           
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>Asteroid Tracker</Header>
-             <p style={{fontStyle:'italic', fontSize:'30px'}}>Stay one step ahead of the asteroids closest to earth</p>
-            <img src={AsteroidTracker} style={{width:'488px', height:'226px'}}></img>
+            <Header as='h3' style={{ fontSize: '2em', padding:'10px' }}>Asteroid Tracker</Header>
+             <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>Stay one step ahead of the asteroids closest to earth</p>
+            <img src={AsteroidTracker} style={{width:'488px', height:'226px', borderRadius:'10px'}}></img>
             <br/>
             <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
@@ -237,7 +244,10 @@ const Homepage = () => (
     </Segment>
 
     <Segment style={{ padding: '0em 0em' }}>
-    <h1 style={{height: '100px', textAlign: 'center', color:'white', fontSize:'50px', marginTop:'-20px', background:'black'}}>Blog</h1>
+    <Segment
+     style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px'}}>Blog
+    </Segment>
+    
      <p style={{padding:'20px 10px', fontSize:'20px', textAlign:'center'}}>Coming Soon!</p>
     </Segment>
 
