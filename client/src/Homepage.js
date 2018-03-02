@@ -273,8 +273,6 @@ const Homepage = () => (
             <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
             <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             <br/>
-            <a href='http://bytehr.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
-            <br/>
             <a href='https://github.com/3bit-Inc/byte' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
 
@@ -292,22 +290,6 @@ const Homepage = () => (
             <a href='https://asteroidtracker.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
             <br/>
             <a href='https://github.com/tenination/asteroid-tracker' target="_blank" style={{textAlign:'left'}}>View on Github</a>
-          </Grid.Column>
-
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>My Goal Posts</Header>
-             <p style={{fontStyle:'italic', fontSize:'30px'}}>Keep track of your goals online</p>
-             <br />
-             <br />
-            <img src={MyGoalPosts} style={{width:'488px', height:'226px'}}></img>
-            <br/>
-            <img src={angularLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
-            <img src={nodeLogo} style={{height:'100px', width:'150px', padding: '15px'}}></img>
-            <img src={sqliteLogo} style={{height:'100px', width:'170px', padding: '15px'}}></img>
-            <br/>
-            <a href='http://mygoalposts.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
-            <br/>
-            <a href='https://github.com/tenination/my-goals' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
 
         </Grid.Row>
