@@ -52,6 +52,7 @@ import PantryByte from './PantryByte.png';
 import AsteroidTracker from './AsteroidTracker.png';
 
 // blogs
+// screenshots taken at 90% window size
 import medium5 from './medium5.png';
 import medium2 from './medium2.png';
 import medium3 from './medium3.png';
@@ -267,13 +268,13 @@ const Homepage = () => (
        <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
          <img className='blog' src={medium5}></img>
        </a>
-       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
+       <a href='https://medium.com/@tim.ninan/our-history-of-egyptology-obsession-4cc31abbe42f' target="_blank">
          <img className='blog' src={medium2}></img>
        </a>
-       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
+       <a href='https://medium.com/@tim.ninan/the-ethos-of-hindu-mythology-405955a39735' target="_blank">
          <img className='blog' src={medium3}></img>
        </a>
-       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
+       <a href='https://medium.com/@tim.ninan/the-complexities-of-greek-myths-1369165ac661' target="_blank">
          <img className='blog' src={medium4}></img>
        </a>
      </div>
