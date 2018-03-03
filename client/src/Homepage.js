@@ -36,7 +36,7 @@ import expressjsLogo from './expressjsLogo.svg';
 import graphQLLogo from './graphQLLogo.png';
 import sqliteLogo from './sqliteLogo.png';
 
-// other
+// general
 import awsLogo from './awsLogo.png';
 import herokuLogo from './herokuLogo.svg';
 import gitLogo from './gitLogo.png';
@@ -46,12 +46,18 @@ import pythonLogo from './pythonLogo.png';
 import cplusplusLogo from './cplusplusLogo.png';
 import javaLogo from './javaLogo.png';
 
+// projects
 import MySong from './MySong.png';
 import PantryByte from './PantryByte.png';
 import AsteroidTracker from './AsteroidTracker.png';
-import MyGoalPosts from './MyGoalPosts.png';
 
-import purple from './purple.jpg';
+// blogs
+import medium5 from './medium5.png';
+import medium2 from './medium2.png';
+import medium3 from './medium3.png';
+import medium4 from './medium4.png';
+
+
 
 const HomepageHeading = ({ mobile }) => (
   <Container  text>
@@ -257,8 +263,21 @@ const Homepage = () => (
      className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px'}}>Blog
     </Segment>
-    
-     <p style={{padding:'20px 10px', fontSize:'20px', textAlign:'center'}}>Coming Soon!</p>
+    <div style={{textAlign:'center'}}>
+       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
+         <img className='blog' src={medium5}></img>
+       </a>
+       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
+         <img className='blog' src={medium2}></img>
+       </a>
+       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
+         <img className='blog' src={medium3}></img>
+       </a>
+       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
+         <img className='blog' src={medium4}></img>
+       </a>
+     </div>
+       
     </Segment>
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee|Roboto|Titillium+Web|Asap|Teko|Anton");
+@import url()
 
 .App {
 	font-family: Titillium Web;
@@ -17,4 +18,13 @@
 	text-align: center;
 	color: black;
 	font-family: Bungee;
+}
+
+.blog {
+	padding:20px;
+	width:500px;
+}
+
+.blog:hover {
+    border-style:solid;
 }
