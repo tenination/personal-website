@@ -166,7 +166,7 @@ const Homepage = () => (
      className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>About Me
     </Segment>
-     <p style={{padding:'100px 80px', fontSize:'20px'}}>I started programming about 10 years ago when I took Java courses in highschool. I have always had a passion for programming and after a 3+ year career in telecom engineering, I rediscovered this passion. Since then I have been on a quest to code all the time and continually build my skills. I am fortunate to know my purpose in life - building awesome web and mobile based experiences.  </p>
+     <p style={{padding:'100px 80px', fontSize:'20px'}}>I love coding. I’m an electronics engineer by degree and in a past life I worked in the telecom space, helping make the network faster and more reliable. However my calling has always been programming and I’m obsessed with all things related to web development. Contact me with any professional opportunities at tim.ninan@gmail.com! </p>
     </Segment>
 
     <Segment style={{ padding: '8em 0em', marginTop: '-13px' }}>
