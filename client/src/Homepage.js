@@ -236,7 +236,7 @@ const Homepage = () => (
             <br/>
             <a href='https://tranquil-hollows-12097.herokuapp.com' target="_blank" style={{textAlign:'left'}}>See Project</a>
             <br/>
-            <a href='https://github.com/TeamCRT/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
+            <a href='https://github.com/tenination/MySong' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
 
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -250,7 +250,7 @@ const Homepage = () => (
               <img src={mysqlLogo} style={{height:'100px', width:'100px', padding: '15px'}}></img>
             </div>
             <br/>
-            <a href='https://github.com/3bit-Inc/byte' target="_blank" style={{textAlign:'left'}}>View on Github</a>
+            <a href='https://github.com/tenination/byte' target="_blank" style={{textAlign:'left'}}>View on Github</a>
           </Grid.Column>
 
         </Grid.Row>
