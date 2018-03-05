@@ -169,7 +169,7 @@ const Homepage = () => (
      <p style={{padding:'100px 80px', fontSize:'20px'}}>I started programming about 10 years ago when I took Java courses in highschool. I have always had a passion for programming and after a 3+ year career in telecom engineering, I rediscovered this passion. Since then I have been on a quest to code all the time and continually build my skills. I am fortunate to know my purpose in life - building awesome web and mobile based experiences.  </p>
     </Segment>
 
-    <Segment style={{ padding: '8em 0em' }}>
+    <Segment style={{ padding: '8em 0em', marginTop: '-13px' }}>
     <Segment
      className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-115px'}}>Skills
@@ -312,7 +312,7 @@ const Homepage = () => (
     </div>
     </Segment>
 
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
+    <Segment inverted vertical style={{ padding: '5em 0em', marginTop: '-14px' }}>
       <Container>
           <h1 style={{textAlign:'center', fontSize:'20px', fontFamily:'Bungee'}}>&copy; 2018 Tim Ninan</h1>
           <div style={{textAlign:'center'}}>
