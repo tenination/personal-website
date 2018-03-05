@@ -55,6 +55,10 @@ import AsteroidTracker from './AsteroidTracker.png';
 // screenshots taken at 90% window size
 import mediumArticle1 from './mediumArticle-1.png';
 
+//icon logo
+import twitterLogo from './twitterLogoGrey1.png';
+import githubIconGrey from './githubIconGrey.png';
+
 
 
 const HomepageHeading = ({ mobile }) => (
@@ -85,6 +89,21 @@ const HomepageHeading = ({ mobile }) => (
         padding:'20px'
       }}
     />
+    <div>
+    <a href='http://www.linkedin.com/in/tim-ninan' target='_blank'>
+      <img className='contact-icon-top' src='https://www.icon2s.com/img256/256x256-black-white-android-linkedin.png'></img>
+    </a>
+    <a href='http://www.github.com/tenination' target='_blank'>
+      <img className='contact-icon-top' src={githubIconGrey}></img>
+    </a>
+    <a href='http://www.twitter.com/tenination' target='_blank'>
+      <img className='contact-icon-top' src={twitterLogo}></img>
+    </a>
+    <a href='http://www.github.com/tenination' target='_blank'>
+      <img className='contact-icon-top' style={{width:'65px'}}src='https://ucarecdn.com/b68d6734-b22c-4dc5-95e6-0ea2d90ac756/resumeicon.png'></img>
+    </a>
+
+    </div>
   </Container>
 )
 
