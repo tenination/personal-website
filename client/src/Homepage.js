@@ -53,10 +53,7 @@ import AsteroidTracker from './AsteroidTracker.png';
 
 // blogs
 // screenshots taken at 90% window size
-import medium5 from './medium5.png';
-import medium2 from './medium2.png';
-import medium3 from './medium3.png';
-import medium4 from './medium4.png';
+import mediumArticle1 from './mediumArticle-1.png';
 
 
 
@@ -265,17 +262,8 @@ const Homepage = () => (
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px'}}>Blog
     </Segment>
     <div style={{textAlign:'center'}}>
-       <a href='https://medium.com/@tim.ninan/the-curious-roots-of-lorem-ipsum-51d270d5c428' target="_blank">
-         <img className='blog' src={medium5}></img>
-       </a>
-       <a href='https://medium.com/@tim.ninan/our-history-of-egyptology-obsession-4cc31abbe42f' target="_blank">
-         <img className='blog' src={medium2}></img>
-       </a>
-       <a href='https://medium.com/@tim.ninan/the-ethos-of-hindu-mythology-405955a39735' target="_blank">
-         <img className='blog' src={medium3}></img>
-       </a>
-       <a href='https://medium.com/@tim.ninan/the-complexities-of-greek-myths-1369165ac661' target="_blank">
-         <img className='blog' src={medium4}></img>
+       <a href='https://medium.com/@tim.ninan/why-i-left-a-promising-career-in-telecom-to-become-a-software-engineer-66070e2b0533' target="_blank">
+         <img className='blog' src={mediumArticle1}></img>
        </a>
      </div>
        
