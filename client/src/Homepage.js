@@ -99,7 +99,7 @@ const HomepageHeading = ({ mobile }) => (
     <a href='http://www.twitter.com/tenination' target='_blank'>
       <img className='contact-icon-top' src={twitterLogo}></img>
     </a>
-    <a href='http://www.github.com/tenination' target='_blank'>
+    <a href='https://drive.google.com/file/d/1fJ84pL2UEj96INewmb93UhPWfPF2EYfl/view?usp=sharing' target='_blank'>
       <img className='contact-icon-top' style={{width:'65px'}}src='https://ucarecdn.com/b68d6734-b22c-4dc5-95e6-0ea2d90ac756/resumeicon.png'></img>
     </a>
 
@@ -275,7 +275,7 @@ const Homepage = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '0em 0em' }}>
+    <Segment style={{ padding: '0em 0em', paddingBottom: '100px' }}>
     <Segment
      className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px'}}>Blog
@@ -288,14 +288,37 @@ const Homepage = () => (
        
     </Segment>
 
+    <Segment style={{ padding: '0em 0em' }}>
+    <Segment
+     className='website-heading'
+     style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px'}}>Contact Me!
+    </Segment>
+    <div style={{textAlign:'center', padding: '50px'}}>
+    <a href='http://www.linkedin.com/in/tim-ninan' target='_blank'>
+      <img className='contact-icon-bottom' src='https://www.icon2s.com/img256/256x256-black-white-android-linkedin.png'></img>
+    </a>
+    <a href='http://www.github.com/tenination' target='_blank'>
+      <img className='contact-icon-bottom' src={githubIconGrey}></img>
+    </a>
+    <a href='http://www.twitter.com/tenination' target='_blank'>
+      <img className='contact-icon-bottom' src={twitterLogo}></img>
+    </a>
+    <a href='https://drive.google.com/file/d/1fJ84pL2UEj96INewmb93UhPWfPF2EYfl/view?usp=sharing' target='_blank'>
+      <img className='contact-icon-bottom' style={{width:'65px'}}src='https://ucarecdn.com/b68d6734-b22c-4dc5-95e6-0ea2d90ac756/resumeicon.png'></img>
+    </a>
+    <br />
+    <br />
+   <a className='email' href='mailto:tim.ninan@gmail.com' target='_blank'><u>tim.ninan@gmail.com</u></a>
+    </div>
+    </Segment>
+
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
           <h1 style={{textAlign:'center', fontSize:'20px', fontFamily:'Bungee'}}>&copy; 2018 Tim Ninan</h1>
           <div style={{textAlign:'center'}}>
-          <span style={{fontSize:'15px', marginLeft:'25px', fontFamily:'Titillium Web'}}>Created using React.js and lots of</span>
-          <span style={{color:'black'}}> ...</span>
-          <Icon name='heart' size='large' color='red' />
-          <div style={{fontSize:'10px', fontFamily:'Titillium Web'}}>Contact me at tim.ninan@gmail.com</div>
+            <span style={{fontSize:'15px', marginLeft:'25px', fontFamily:'Titillium Web'}}>Created using React.js and lots of</span>
+            <span style={{color:'black'}}> ...</span>
+            <Icon name='heart' size='large' color='red' />
           </div>
       </Container>
     </Segment>

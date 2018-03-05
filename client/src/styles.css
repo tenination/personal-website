@@ -26,7 +26,7 @@
 }
 
 .blog:hover {
-    border-style:solid;
+  background-color: #e1e5ed;
 }
 
 .contact-icon-top {
@@ -38,4 +38,25 @@
 
 .contact-icon-top:hover {
   background-color: #687fae;
+}
+
+.contact-icon-bottom {
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.contact-icon-bottom:hover {
+  background-color: #e1e5ed;
+}
+
+.email {
+	font-size: 20px;
+	color:black;
+}
+
+.email:hover{
+	font-size: 20px;
+	color: #656d7a;
 }
