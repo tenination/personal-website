@@ -276,6 +276,7 @@ const Homepage = () => (
           <span style={{fontSize:'15px', marginLeft:'25px', fontFamily:'Titillium Web'}}>Created using React.js and lots of</span>
           <span style={{color:'black'}}> ...</span>
           <Icon name='heart' size='large' color='red' />
+          <div style={{fontSize:'10px', fontFamily:'Titillium Web'}}>Contact me at tim.ninan@gmail.com</div>
           </div>
       </Container>
     </Segment>
