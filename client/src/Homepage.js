@@ -54,6 +54,7 @@ import AsteroidTracker from './AsteroidTracker.png';
 // blogs
 // screenshots taken at 90% window size
 import mediumArticle1 from './mediumArticle-1.png';
+import mediumArticle2 from './medium-cartooning-around.png';
 
 //icon logo
 import twitterLogo from './twitterLogoGrey1.png';
@@ -283,6 +284,9 @@ const Homepage = () => (
     <div style={{textAlign:'center'}}>
        <a href='https://medium.com/@tim.ninan/why-i-left-a-promising-career-in-telecom-to-become-a-software-engineer-66070e2b0533' target="_blank">
          <img className='blog' src={mediumArticle1}></img>
+       </a>
+       <a href='https://medium.com/@tim.ninan/cartooning-around-54e2473d316d' target="_blank">
+         <img className='blog' src={mediumArticle2}></img>
        </a>
      </div>
        
