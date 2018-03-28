@@ -100,7 +100,7 @@ const HomepageHeading = ({ mobile }) => (
     <a href='http://www.twitter.com/tenination' target='_blank'>
       <img className='contact-icon-top' src={twitterLogo}></img>
     </a>
-    <a href='https://drive.google.com/file/d/1fJ84pL2UEj96INewmb93UhPWfPF2EYfl/view?usp=sharing' target='_blank'>
+    <a href='https://drive.google.com/file/d/1ZMye1-sFd9NbsRLyKyqdKtX8pClQoOBX/view?usp=sharing' target='_blank'>
       <img className='contact-icon-top' style={{width:'65px'}}src='https://ucarecdn.com/b68d6734-b22c-4dc5-95e6-0ea2d90ac756/resumeicon.png'></img>
     </a>
 
@@ -307,7 +307,7 @@ const Homepage = () => (
     <a href='http://www.twitter.com/tenination' target='_blank'>
       <img className='contact-icon-bottom' src={twitterLogo}></img>
     </a>
-    <a href='https://drive.google.com/file/d/1fJ84pL2UEj96INewmb93UhPWfPF2EYfl/view?usp=sharing' target='_blank'>
+    <a href='https://drive.google.com/file/d/1ZMye1-sFd9NbsRLyKyqdKtX8pClQoOBX/view?usp=sharing' target='_blank'>
       <img className='contact-icon-bottom' style={{width:'65px'}}src='https://ucarecdn.com/b68d6734-b22c-4dc5-95e6-0ea2d90ac756/resumeicon.png'></img>
     </a>
     <br />
