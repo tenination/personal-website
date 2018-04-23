@@ -15,10 +15,9 @@ app.get('/mysong', function (req, res) {
   res.redirect(302, 'https://tranquil-hollows-12097.herokuapp.com');
 });
 
-app.get('*', function(request, response) {
+app.get('/', function(request, response) {
     response.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
-
 
 app.listen(PORT, function () {
   console.log(`listening on port ${PORT}`);
