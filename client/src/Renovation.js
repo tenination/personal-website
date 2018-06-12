@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import 'semantic-ui-css/semantic.min.css';
-import './styles.css';
-import Homepage from './Homepage';
-import Renovation from './Renovation';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Renovation />
+          <h1 className="App-title">This site is currently being renovated. Please check back later!</h1>
       </div>
     );
   }
