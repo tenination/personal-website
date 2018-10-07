@@ -59,6 +59,7 @@ import mediumArticle2 from './medium-cartooning-around.png';
 //icon logo
 import twitterLogo from './twitterLogoGrey1.png';
 import githubIconGrey from './githubIconGrey.png';
+import linkedIcon from './linkedinIcon.png';
 
 
 
@@ -92,7 +93,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <div>
     <a href='http://www.linkedin.com/in/tim-ninan' target='_blank'>
-      <img className='contact-icon-top' src='https://www.icon2s.com/img256/256x256-black-white-android-linkedin.png'></img>
+      <img className='contact-icon-top' style={{opacity:'0.5'}} src={linkedIcon}></img>
     </a>
     <a href='http://www.github.com/tenination' target='_blank'>
       <img className='contact-icon-top' src={githubIconGrey}></img>
@@ -100,9 +101,9 @@ const HomepageHeading = ({ mobile }) => (
     <a href='http://www.twitter.com/tenination' target='_blank'>
       <img className='contact-icon-top' src={twitterLogo}></img>
     </a>
-    <a href='https://drive.google.com/file/d/1RB-77e5hFF-K5JOSH6gWWgoiig4U2GNz/view' target='_blank'>
+    {/* <a href='https://drive.google.com/file/d/1RB-77e5hFF-K5JOSH6gWWgoiig4U2GNz/view' target='_blank'>
       <img className='contact-icon-top' style={{width:'65px'}}src='https://ucarecdn.com/b68d6734-b22c-4dc5-95e6-0ea2d90ac756/resumeicon.png'></img>
-    </a>
+    </a> */}
 
     </div>
   </Container>
@@ -167,7 +168,7 @@ const Homepage = () => (
      className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>About Me
     </Segment>
-     <p style={{padding:'100px 80px', fontSize:'20px', textAlign: 'center'}}> Hi I'm Tim, a full stack software engineer. I'm interested in all things web and mobile and looking to leverage my skills to build awesome things. I'm proficient in working across the full stack and constantly building upon my toolkit with new technologies and approaches to problem solving. Contact me with any professional opportunities at tim.ninan@gmail.com! </p>
+     <p style={{padding:'100px 80px', fontSize:'20px', textAlign: 'center'}}> Hi I'm Tim, a full stack software engineer, with a frontend focus. I'm interested in all things web and mobile and looking to leverage my skills to build awesome things. I'm proficient in working across the full stack and constantly building upon my toolkit with new technologies and approaches to problem solving. Contact me with any professional opportunities at tim.ninan@gmail.com! </p>
     </Segment>
 
     <Segment style={{ padding: '8em 0em', marginTop: '-13px' }}>
@@ -175,7 +176,7 @@ const Homepage = () => (
      className='website-heading'
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-115px'}}>Skills
     </Segment>
-      <Grid style={{marginTop:'30px', padding:'10px'}}>  
+      <Grid style={{marginTop:'30px', padding:'10px'}}>
       <Grid.Row columns={3}>
         <Grid.Column style={{background: 'white'}}>
         <h1 className='skills-subheading'>Front-End</h1>
@@ -223,7 +224,7 @@ const Homepage = () => (
       <Segment className='website-heading' style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px', borderRadius:'0px'}}>Portfolio</Segment>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
-          
+
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h2' style={{ fontSize: '2em', fontFamily:'Titillium Web' }}>MySong</Header>
             <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>A Spotify integrated platform to share your favorite song for the week with people in your life</p>
@@ -256,7 +257,7 @@ const Homepage = () => (
 
         </Grid.Row>
           <Grid.Row textAlign='center'>
-          
+
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em', padding:'10px', fontFamily:'Titillium Web' }}>Asteroid Tracker</Header>
              <p style={{fontStyle:'italic', fontSize:'20px', padding:'0px 50px'}}>Stay one step ahead of the asteroids closest to earth</p>
@@ -282,14 +283,15 @@ const Homepage = () => (
      style={{textAlign: 'center', fontSize:'50px', marginTop:'-92px'}}>Blog
     </Segment>
     <div style={{textAlign:'center'}}>
-       <a href='https://medium.com/@tim.ninan/why-i-left-a-promising-career-in-telecom-to-become-a-software-engineer-66070e2b0533' target="_blank">
+       {/* <a href='https://medium.com/@tim.ninan/why-i-left-a-promising-career-in-telecom-to-become-a-software-engineer-66070e2b0533' target="_blank">
          <img className='blog' src={mediumArticle1}></img>
        </a>
        <a href='https://medium.com/@tim.ninan/cartooning-around-54e2473d316d' target="_blank">
          <img className='blog' src={mediumArticle2}></img>
-       </a>
-     </div>
-       
+       </a> */}
+       <div style={{fontSize:'20px'}}>Coming Soon....</div>
+   </div>
+
     </Segment>
 
     <Segment style={{ padding: '0em 0em' }}>
@@ -299,7 +301,7 @@ const Homepage = () => (
     </Segment>
     <div style={{textAlign:'center', padding: '50px'}}>
     <a href='http://www.linkedin.com/in/tim-ninan' target='_blank'>
-      <img className='contact-icon-bottom' src='https://www.icon2s.com/img256/256x256-black-white-android-linkedin.png'></img>
+      <img className='contact-icon-top' src={linkedIcon}></img>
     </a>
     <a href='http://www.github.com/tenination' target='_blank'>
       <img className='contact-icon-bottom' src={githubIconGrey}></img>
@@ -307,9 +309,9 @@ const Homepage = () => (
     <a href='http://www.twitter.com/tenination' target='_blank'>
       <img className='contact-icon-bottom' src={twitterLogo}></img>
     </a>
-    <a href='https://drive.google.com/file/d/1RB-77e5hFF-K5JOSH6gWWgoiig4U2GNz/view' target='_blank'>
+    {/* <a href='https://drive.google.com/file/d/1RB-77e5hFF-K5JOSH6gWWgoiig4U2GNz/view' target='_blank'>
       <img className='contact-icon-bottom' style={{width:'65px'}}src='https://ucarecdn.com/b68d6734-b22c-4dc5-95e6-0ea2d90ac756/resumeicon.png'></img>
-    </a>
+    </a> */}
     <br />
     <br />
    <a className='email' href='mailto:tim.ninan@gmail.com' target='_blank'><u>tim.ninan@gmail.com</u></a>
