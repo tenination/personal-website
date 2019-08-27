@@ -28,6 +28,9 @@ import jqueryLogo from './jqueryLogo.png';
 import htmlLogo from './htmlLogo.png';
 import cssLogo from './cssLogo.png';
 import javascriptLogo from './javascriptLogo.png';
+import typescriptLogo from './typescriptLogo.png';
+import d3Logo from './d3Logo.png';
+import apolloLogo from './apolloLogo.png';
 // backend
 import nodeLogo from './nodeLogo.png';
 import mongodbLogo from './mongodbLogo.png';
@@ -35,6 +38,7 @@ import mysqlLogo from './mysqlLogo.svg';
 import expressjsLogo from './expressjsLogo.svg';
 import graphQLLogo from './graphQLLogo.png';
 import sqliteLogo from './sqliteLogo.png';
+import firebaseLogo from './firebaseLogo.png';
 
 // general
 import awsLogo from './awsLogo.png';
@@ -50,7 +54,8 @@ import javaLogo from './javaLogo.png';
 import MySong from './MySong.png';
 import PantryByte from './PantryByte.png';
 import AsteroidTracker from './AsteroidTracker.png';
-
+import ProjectPlan from './ProjectPlan.png';
+import BooksApp from './BooksApp.png';
 // blogs
 // screenshots taken at 90% window size
 import mediumArticle1 from './mediumArticle-1.png';
@@ -203,12 +208,12 @@ const Homepage = () => (
         style={{ padding: '100px 80px', fontSize: '20px', textAlign: 'center' }}
       >
         {' '}
-        Hi I'm Tim, a full stack software engineer, with a frontend focus. I'm
-        interested in all things web and mobile and looking to leverage my
-        skills to build awesome things. I'm proficient in working across the
-        full stack and constantly building upon my toolkit with new technologies
-        and approaches to problem solving. Contact me with any professional
-        opportunities at tim.ninan.atx@gmail.com!{' '}
+        Hi I'm Tim, a full stack software engineer. I'm interested in all things
+        web and mobile and looking to leverage my skills to build awesome
+        things. I'm proficient in working across the full stack and constantly
+        building upon my toolkit with new technologies and approaches to problem
+        solving. Contact me with any professional opportunities at
+        tim.ninan.atx@gmail.com!{' '}
       </p>
     </Segment>
 
@@ -261,6 +266,18 @@ const Homepage = () => (
                 src={javascriptLogo}
                 style={{ height: '100px', width: '100px', padding: '15px' }}
               />
+              <img
+                src={typescriptLogo}
+                style={{ height: '100px', width: '100px', padding: '15px' }}
+              />
+              <img
+                src={d3Logo}
+                style={{ height: '100px', width: '120px', padding: '15px' }}
+              />
+              <img
+                src={apolloLogo}
+                style={{ height: '100px', width: '100px', padding: '15px' }}
+              />
             </Grid.Row>
           </Grid.Column>
 
@@ -287,20 +304,16 @@ const Homepage = () => (
                 src={graphQLLogo}
                 style={{ height: '100px', width: '100px', padding: '15px' }}
               />
+              <img
+                src={firebaseLogo}
+                style={{ height: '100px', width: '100px', padding: '15px' }}
+              />
             </Grid.Row>
           </Grid.Column>
 
           <Grid.Column style={{ background: 'white' }}>
             <h1 className="skills-subheading">General</h1>
             <Grid.Row>
-              <img
-                src={awsLogo}
-                style={{ height: '70px', width: '100px', padding: '15px' }}
-              />
-              <img
-                src={herokuLogo}
-                style={{ height: '100px', width: '100px', padding: '15px' }}
-              />
               <img
                 src={gitLogo}
                 style={{ height: '60px', width: '100px', padding: '15px' }}
@@ -319,6 +332,14 @@ const Homepage = () => (
               />
               <img
                 src={javaLogo}
+                style={{ height: '100px', width: '100px', padding: '15px' }}
+              />
+              <img
+                src={awsLogo}
+                style={{ height: '70px', width: '100px', padding: '15px' }}
+              />
+              <img
+                src={herokuLogo}
                 style={{ height: '100px', width: '100px', padding: '15px' }}
               />
               <img
@@ -436,6 +457,102 @@ const Homepage = () => (
         <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header
+              as="h2"
+              style={{ fontSize: '2em', fontFamily: 'Titillium Web' }}
+            >
+              ProjectPlan
+            </Header>
+            <p
+              style={{
+                fontStyle: 'italic',
+                fontSize: '20px',
+                padding: '0px 50px',
+              }}
+            >
+              A project management app to keep track of all your projects.
+            </p>
+            <img
+              src={ProjectPlan}
+              style={{ width: '488px', height: '226px', borderRadius: '10px' }}
+            />
+            <br />
+            <div style={{ paddingTop: '20px' }}>
+              <img src={reactLogo} style={{ width: '80px', padding: '15px' }} />
+              <img src={reduxLogo} style={{ width: '80px', padding: '15px' }} />
+              <img src={nodeLogo} style={{ width: '100px', padding: '15px' }} />
+              <img
+                src={mongodbLogo}
+                style={{ width: '80px', padding: '15px' }}
+              />
+              <img
+                src={firebaseLogo}
+                style={{ width: '80px', padding: '15px' }}
+              />
+            </div>
+            <br />
+            <a
+              href="https://project-planz.firebaseapp.com/"
+              target="_blank"
+              style={{ textAlign: 'left' }}
+            >
+              See Project
+            </a>
+            <br />
+            <a
+              href="https://github.com/tenination/projects-app"
+              target="_blank"
+              style={{ textAlign: 'left' }}
+            >
+              View on Github
+            </a>
+          </Grid.Column>
+
+          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+            <Header
+              as="h3"
+              style={{ fontSize: '2em', fontFamily: 'Titillium Web' }}
+            >
+              Books
+            </Header>
+            <p
+              style={{
+                fontStyle: 'italic',
+                fontSize: '20px',
+                padding: '0px 50px',
+              }}
+            >
+              A reading list app
+            </p>
+            <img
+              src={BooksApp}
+              style={{ width: '488px', height: '226px', borderRadius: '10px' }}
+            />
+            <br />
+            <div style={{ paddingTop: '20px' }}>
+              <img src={reactLogo} style={{ width: '80px', padding: '15px' }} />
+              <img
+                src={apolloLogo}
+                style={{ width: '80px', padding: '15px' }}
+              />
+              <img
+                src={graphQLLogo}
+                style={{ width: '80px', padding: '15px' }}
+              />
+              <img src={nodeLogo} style={{ width: '100px', padding: '15px' }} />
+            </div>
+            <br />
+            <a
+              href="https://github.com/tenination/books-app"
+              target="_blank"
+              style={{ textAlign: 'left' }}
+            >
+              View on Github
+            </a>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row textAlign="center">
+          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+            <Header
               as="h3"
               style={{
                 fontSize: '2em',
@@ -528,7 +645,7 @@ const Homepage = () => (
         <br />
         <br />
         <a className="email" href="mailto:tim.ninan@gmail.com" target="_blank">
-          <u>tim.ninan@gmail.com</u>
+          <u>tim.ninan.atx@gmail.com</u>
         </a>
       </div>
     </Segment>
@@ -546,7 +663,7 @@ const Homepage = () => (
             fontFamily: 'Bungee',
           }}
         >
-          &copy; 2018 Tim Ninan
+          &copy; 2019 Tim Ninan
         </h1>
         <div style={{ textAlign: 'center' }}>
           <span
