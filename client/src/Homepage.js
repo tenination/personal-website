@@ -213,7 +213,7 @@ const Homepage = () => (
         things. I'm proficient in working across the full stack and constantly
         building upon my toolkit with new technologies and approaches to problem
         solving. Contact me with any professional opportunities at
-        tim.ninan.atx@gmail.com!{' '}
+        tim.ninan.atx@gmail.com!{' '}. Test. 
       </p>
     </Segment>
 
